@@ -1,0 +1,29 @@
+<div>
+<h1>Q.1 ===</h1>
+<app-first></app-first>
+<app-second></app-second>
+<h1 style="font-weight: bold ;">--------------------------------------------------------------</h1>
+</div>
+
+<div>
+  <h1>Q.2 ===</h1>
+  <h1>{{fun()}}</h1>
+  <h1 style="font-weight: bold ;">--------------------------------------------------------------</h1>
+</div>
+
+<div>
+  <h1>Q.3 ===</h1>
+  <h1>{{text1}}</h1>
+  <button class="myButton" (click)="getMessage()">Click</button>
+  <h1 style="font-weight: bold ;">--------------------------------------------------------------</h1>
+</div>
+
+<div>
+  <h1>Q.4 ===</h1>
+  <button class="myButton" (click)="UpperCase()">UPPER</button>
+  <h1 #text>{{text2}}</h1>
+  <button class="myButton" (click)="lowerCase()">lower</button>
+  <h1 style="font-weight: bold ;">--------------------------------------------------------------</h1>
+</div>
+
+<router-outlet></router-outlet>
