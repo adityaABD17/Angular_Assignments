@@ -1,0 +1,28 @@
+<h1> Inside parent component : app</h1>
+
+<div>
+<h1>Q.1 Reverse String using MyRev pipe</h1>   
+<h1>{{Demo}} : {{Demo | myRev}}</h1>
+<h1>--------------------------------------------------------------------------------</h1>
+</div>
+
+
+<div>
+<h1>Q.2 ===</h1>  
+<h1>Number is : {{Num1}}</h1> 
+<h2>Adding using myAdd pipe : {{Num1 | myAdd : 21}}</h2>
+<h2>Multiplying using myMult pipe:{{Num1 | myMult: 3}}</h2>
+<h1>--------------------------------------------------------------------------------</h1>
+</div>
+
+<div>
+    <h1>Q.3 ===</h1>
+    <h1>Number is : {{Num2}}</h1>
+    <h2>{{Num2}} {{Num2 | marvellousChk : "Even" }}</h2>
+    <h2>{{Num2}} {{Num2 | marvellousChk : "Odd" }}</h2>
+    <h2>{{Num2}} {{Num2 | marvellousChk : "Perfect" }}</h2>
+    <h2>{{Num2}} {{Num2 | marvellousChk : "Prime" }}</h2>
+</div>
+
+
+<router-outlet></router-outlet>
