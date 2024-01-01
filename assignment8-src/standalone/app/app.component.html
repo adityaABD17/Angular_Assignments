@@ -1,0 +1,21 @@
+<div>
+<h1>Q.1 === </h1>
+<h1>Inside Parent Component : app ; message from child is : {{Message}}</h1>
+<app-child (EvEm) = "Message = $event"></app-child>
+<h1>----------------------------------------------------------------------------------------</h1>
+</div>
+
+<div>
+  <h1>Q.2 ===</h1>
+  <h1>Inside Parent Component : app</h1>
+  <app-child2 [Message] = "'Hello'"></app-child2>
+  <h1>----------------------------------------------------------------------------------------</h1>
+</div>
+
+<div>
+  <h1>Q.4 ===</h1>
+  <input #temp type="Text">
+  <button (click)="Display(temp.value)">Display</button>
+  <h2>Your message is : {{disStr}}</h2>
+</div>
+<router-outlet></router-outlet>
