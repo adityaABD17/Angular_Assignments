@@ -1,0 +1,24 @@
+<section class="grid items-center justify-center border border-black ">
+
+  <div>
+    <app-header></app-header>
+  </div>
+
+  <div>
+    <app-personal-info></app-personal-info>
+  </div>
+
+  <div>
+    <app-bug-info></app-bug-info>
+  </div>
+
+  <div class="flex flex-row items-center justify-center">
+    <app-footer (Signal)="Message = $event" ></app-footer>
+  </div>
+
+  <div>
+    <h1>Confirmed : {{Message}}</h1>
+  </div>
+</section>
+
+<router-outlet></router-outlet>
