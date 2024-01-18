@@ -1,0 +1,9 @@
+<div>
+    <h3><label for="String">Enter your string</label></h3>
+    <input id="String" type="text" [(ngModel)]="str"/>
+    <button (click)="chkCap()">Check</button>
+
+    <div *ngIf="capital !== null">
+        <h3>Number of capital letters are : {{capital}}</h3>
+    </div>
+</div>

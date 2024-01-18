@@ -1,0 +1,11 @@
+
+<div>
+    <h3><label for="numberInput">Enter a number :</label></h3>
+    <input id="NumberInput" type="number" [(ngModel)]="chkNo"/>
+    <button (click)="chkPrime()">Check</button>
+
+    <div *ngIf="isPrimeResult !== null">
+        <h3>{{chkNo}} is {{isPrimeResult ? 'prime' : 'not prime'}}</h3>
+    </div>
+
+</div>
